@@ -49,6 +49,15 @@ git clone https://github.com/ShaeInTheCloud/30days-weather-dashboard.git
 3. Install dependencies:
 bashCopypip install -r requirements.txt
 
+**Be Mindful of Python Version pip2 v pip3**
+
+If you receive eerrors related to pip, start here
+- https://stackoverflow.com/questions/42870537/zsh-command-cannot-found-pip
+
+- To accept breaking changes for a one time execution
+
+https://stackoverflow.com/questions/75608323/how-do-i-solve-error-externally-managed-environment-every-time-i-use-pip-3
+
 4. Configure environment variables (.env):
 CopyOPENWEATHER_API_KEY=your_api_key
 AWS_BUCKET_NAME=your_bucket_name
@@ -61,7 +70,7 @@ python src/weather_dashboard.py
 
 What I Learned
 
-AWS S3 bucket creation and management
+Documentation is key - utilize reference articles to understand what is being manipulated and why
 Environment variable management for secure API keys
 Python best practices for API integration
 Git workflow for project development
@@ -72,7 +81,7 @@ Future Enhancements
 
 Add weather forecasting
 Implement data visualization
-Add more cities
+Enter a field that allows user input for cities
 Create automated testing
 Set up CI/CD pipeline
 # 30DayDevRepo
